@@ -5,3 +5,7 @@ from app import app
 def index():
     return "Hello, World!"
 
+@app.route("/api/machine/v1/send-command", methods=["GET"])
+def send_command():
+  return "Send machine command"
+
